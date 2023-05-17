@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>SgtJasper1</title>
+    <title>Phyrok</title>
     <meta name="description" content="" />
-    <meta name="author" content="Tooplate" />
+    <meta name="author" content="Phyrok" />
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Additional CSS Files -->
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/owl.css" />
     <link rel="stylesheet" href="assets/css/lightbox.css" />
+    <link rel="icon" href="assets/images/phyrok.ico" type="image/x-icon">
   </head>
 <!--
 Tooplate 2116 Blugoon
@@ -28,10 +29,10 @@ https://www.tooplate.com/view/2116-blugoon
           <i class="fa fa-times" id="menu-close"></i>
           <div class="container">
             <div class="image">
-              <a href="#"><img src="assets/images/Jasper.gif" alt="SgtJasper1" /></a>
+              <a href="#"><img src="assets/images/phyrok.png" alt="Phyrok" /></a>
             </div>
             <div class="author-content">
-              <h4>SgtJasper1</h4>
+              <h4>Phyrok</h4>
               <span>Coding / Games</span>
             </div>
             <nav class="main-nav" role="navigation">
@@ -56,7 +57,7 @@ https://www.tooplate.com/view/2116-blugoon
               </ul>
             </div>
             <div class="copyright-text">
-              <p>Copyright 2023 SgtJasper1</p>
+              <p>Copyright <span id="currentYear"></span> Phyrok</p>
             </div>
           </div>
         </div>
@@ -65,37 +66,21 @@ https://www.tooplate.com/view/2116-blugoon
       <section class="section about-me" data-section="section1">
         <div class="container">
         <div class="top-header">
-        	<img src="assets/images/typing.gif" alt="Typing" />
+        	<img src="assets/images/alpha.jpg" alt="Typing" />
         </div>
           <div class="section-heading">
           
             <h2>Introducing Myself</h2>
             <div class="line-dec"></div>
-            <span>Hi, my name is Jasper, a gamer and programmer. I've been passionate about gaming since I was a kid, and I've turned that passion into a career by learning how to code. In my free time, you'll find me playing games like Squad, BattleBit, Factorio, Company of Heroes or working on my latest programming project. I'm always looking to connect with fellow gamers and programmers, so don't hesitate to join my Discord Server and share your favorite games or projects with me."</span>
+            <span>Hey, I'm Phyrok, a gamer and programmer. <br>
+                  Since childhood, gaming has been my passion, and I've transformed it into a career through coding. <br>
+                  When I'm not working on my latest programming project, you'll catch me playing games like Squad, BattleBit, Factorio, and Company of Heroes. I'm eager to connect with like-minded gamers and programmers, so feel free to join my Discord Server and share your favorite games or projects with me.</span>
             
             <p></p>
             <div class="discord-button">
               <a href="#"><i class="fa fa-discord"></i> Discord Server</a>
             </div>
 
-          </div>
-          
-          <div class="image-post">
-            <div class="row">
- 
-              <div class="col-md-8">
-                <div class="left-text">
-                  <h4>So what is this website?</h4>
-                  <p>Really just a small project I like working on.</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="right-image">
-                  <img src="assets/images/games.jpg" alt="Games" />
-                </div>
-              </div>
-              
-            </div>
           </div>
         </div>
       </section>
@@ -105,35 +90,21 @@ https://www.tooplate.com/view/2116-blugoon
           <div class="section-heading">
             <h2>Projects</h2>
             <div class="line-dec"></div>
-            <span>All of my projects that I have or am working on.</span>
+            <span>My ongoing and completed projects.</span>
           </div>
           <div class="row">
             <div class="col-md-6">
               <div class="service-item">
-                <i class="fa fa-globe"></i>
-                <h4>Sunachu.nl</h4>
-                <p>Website</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <i class="fa fa-globe"></i>
-                <h4>ScoutingGroenewoud.nl</h4>
-                <p>Website</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
                 <i class="fa fa-discord"></i>
                 <h4>Commander Data</h4>
-                <p>Discord Bot</p>
+                <p>Discord Moderation Bot</p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="service-item">
                 <i class="fa fa-discord"></i>
-                <h4>Kharn</h4>
-                <p>Discord Bot</p>
+                <h4>Stereo</h4>
+                <p>Discord Music Bot</p>
               </div>
             </div>
           </div>
@@ -186,12 +157,11 @@ https://www.tooplate.com/view/2116-blugoon
           <div class="section-heading">
             <h2>Contact</h2>
             <div class="line-dec"></div>
-            <span>Aenean a consectetur mi, sit amet consequat velit. Mauris vitae nunc viverra, mattis arcu quis, vestibulum eros. </span>
           </div>
           <div class="row">
             <div class="right-content">
               <div class="container">
-                <form id="contact" action="" method="post">
+                <form id="contact" action="send_email.php" method="post">
                   <div class="row">
                     <div class="col-md-6">
                       <fieldset>
@@ -241,6 +211,7 @@ https://www.tooplate.com/view/2116-blugoon
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/lightbox.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/php/send_email.php"></script>
     <script>
       //according to loftblog tut
       $(".main-menu li:first").addClass("active");
@@ -290,6 +261,9 @@ https://www.tooplate.com/view/2116-blugoon
       $(window).scroll(function() {
         checkSection();
       });
+
+      var currentYear = new Date().getFullYear();
+      document.getElementById("currentYear").textContent = currentYear;
     </script>
   </body>
 </html>
