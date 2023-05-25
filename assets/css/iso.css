@@ -1,0 +1,47 @@
+table {
+    background-color: #f2f2f2; /* Set table background color */
+  }
+  
+  th {
+    background-color: #333; /* Set header background color */
+    color: #fff; /* Set header text color */
+    font-size: 16px; /* Set header font size */
+  }
+  
+  table {
+    border: 1px solid #ccc; /* Add a border to the table */
+  }
+  
+  td, th {
+    border: 1px solid #ccc; /* Add a border to cells */
+  }
+  
+  th {
+    text-align: center; /* Align header text to the left */
+  }
+  
+  td {
+    text-align: center; /* Align cell text to the center */
+    vertical-align: middle; /* Vertically center cell content */
+  }
+  
+  td, th {
+    padding: 10px; /* Add padding around cell content */
+  }
+  
+  table {
+    margin-bottom: 20px; /* Add margin below the table */
+  }
+
+  table {
+    border-collapse: collapse; /* Merge cell borders */
+    width: 100%; /* Adjust table width */
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5; /* Set hover background color for rows */
+  }
+  
+  td:hover {
+    background-color: #eee; /* Set hover background color for cells */
+  }
