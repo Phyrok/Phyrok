@@ -12,6 +12,9 @@
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/iso.css" />
     <link rel="icon" href="assets/images/phyrok.ico" type="image/x-icon">
+    <!-- Scripts -->
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/back-to-top.js"></script>
 </head>
 
 <body>
@@ -1349,52 +1352,6 @@
         </tbody>
     </table>
 
-    <script>
-        // Get the search input, button, and results container elements
-        var searchInput = document.getElementById("searchInput");
-        var searchButton = document.getElementById("searchButton");
-        var searchResults = document.getElementById("searchResults");
-
-        // Add an event listener to the search button
-        searchButton.addEventListener("click", function () {
-            var query = searchInput.value;
-            searchWebsite(query);
-        });
-
-        // Function to search the website
-        function searchWebsite(query) {
-            if (query) {
-                var resultCount = 0;
-                if (window.find(query)) {
-                    resultCount++;
-
-                    // Highlight the found text
-                    document.execCommand("hiliteColor", false, "yellow");
-                }
-
-                // Display the number of results found
-                searchResults.textContent = resultCount + " result(s) found.";
-            } else {
-                // Clear the search results if the query is empty
-                searchResults.textContent = "";
-            }
-        }
-    </script>
-    <script>
-        window.addEventListener('scroll', function () {
-            var button = document.querySelector('.back-to-top-btn');
-            if (window.scrollY > 300) {
-                button.style.display = 'block';
-            } else {
-                button.style.display = 'none';
-            }
-        });
-
-        document.querySelector('.back-to-top-btn').addEventListener('click', function (e) {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    </script>
 </body>
 
 </html>

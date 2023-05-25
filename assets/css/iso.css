@@ -45,3 +45,59 @@ table {
   td:hover {
     background-color: #eee; /* Set hover background color for cells */
   }
+
+  #searchContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #searchInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+    margin-right: 5px;
+  }
+  
+  #searchButton {
+    padding: 8px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #searchButton:hover {
+    background-color: #45a049;
+  }
+  
+  #searchResults {
+    margin-top: 10px;
+  }
+  
+  #searchResults hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+  }
+  
+  .back-to-top-btn {
+    display: none; /* Hide the button by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #555;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5;
+  }
+  
+  .back-to-top-btn:hover {
+    background-color: #777;
+    text-decoration: none;
+    color: #fff;
+  }
