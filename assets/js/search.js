@@ -1,29 +1,28 @@
-// Get the search input, button, and results container elements
-        var searchInput = document.getElementById("searchInput");
-        var searchButton = document.getElementById("searchButton");
-        var searchResults = document.getElementById("searchResults");
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".search-input").forEach((inputField) => {
+    const tableRows = inputField
+      .closest("table")
+      .querySelectorAll("tbody > tr");
+    const headerCell = inputField.closest("th");
+    const otherHeaderCells = headerCell.closest("tr").children;
+    const columnIndex = Array.from(otherHeaderCells).indexOf(headerCell);
+    const searchableCells = Array.from(tableRows).map(
+      (row) => row.querySelectorAll("td")[columnIndex]
+    );
 
-        // Add an event listener to the search button
-        searchButton.addEventListener("click", function () {
-            var query = searchInput.value;
-            searchWebsite(query);
-        });
+    inputField.addEventListener("input", () => {
+      const searchQuery = inputField.value.toLowerCase();
 
-        // Function to search the website
-        function searchWebsite(query) {
-            if (query) {
-                var resultCount = 0;
-                if (window.find(query)) {
-                    resultCount++;
+      for (const tableCell of searchableCells) {
+        const row = tableCell.closest("tr");
+        const value = tableCell.textContent.toLowerCase().replace(",", "");
 
-                    // Highlight the found text
-                    document.execCommand("hiliteColor", false, "yellow");
-                }
+        row.style.visibility = null;
 
-                // Display the number of results found
-                searchResults.textContent = resultCount + " result(s) found.";
-            } else {
-                // Clear the search results if the query is empty
-                searchResults.textContent = "";
-            }
+        if (value.search(searchQuery) === -1) {
+          row.style.visibility = "collapse";
         }
+      }
+    });
+  });
+});
