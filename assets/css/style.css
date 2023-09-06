@@ -164,11 +164,21 @@ html {
 }
 
 .menu .social-network {
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 .menu .social-network ul li {
     margin: 0 3px;
+}
+
+.menu .social-network p {
+    padding: 0 10px;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.5s;
 }
 
 .menu .social-network ul li a {
@@ -179,7 +189,7 @@ html {
     line-height: 40px;
     background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
-    font-size: 14px;
+    font-size: 20px;
     transition: all 0.5s;
 }
 
@@ -343,6 +353,23 @@ html {
 
 .white-button a:hover {
     background-color: #2279BD;
+    color: #fff;
+}
+
+.battlebit-button a {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #fff;
+    color: #c72323;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.battlebit-button a:hover {
+    background-color: #c72323;
     color: #fff;
 }
 
